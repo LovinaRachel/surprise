@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    text-align:left;
+}
+body{
+    background: linear-gradient(to left, rgb(1, 1, 34),rgb(86, 86, 109), white);
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/star1.png);
+    background-size: cover;
+    background-position: centre;
+   
+    position:absolute;
+    
+    
+}
+
+nav a{
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    font-style: italic;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, 'Times New Roman', Times, serif;
+}
+
+.text-box{
+    position: relative;
+    text-align: center;
+    
+    margin-top: 20%;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 3px;
+    font-size: xx-large;
+    
+    
+
+}
+
+
+.text-box .aboutus{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 60px;
+    margin-left: 120px;
+   
+
+
+}
+
+.aboutus{
+    position: absolute;
+   text-align: center;
+   margin-left: 40%;
+   margin-top: 40%;
+   font-size: small;
+   
+  
+
+}
+
+.aboutus {
+    color: #080422a1;
+    text-decoration: dotted;
+    padding: 7px 10px;
+    margin-right: 5px;
+    border: 2px solid #15027c;
+    background: rgb(188, 229, 245);
+    opacity: 80%;
+   
+    animation: slidein 1s ease normal;
+
+
+}
+@keyframes slidein{
+    0%{
+        transform: skewX(53deg) translateX(-500px);
+    }
+    100%{
+        transform: skew(0deg);
+    }
+}
+
+h1{
+    font-style: oblique;
+    font-family: 'Times New Roman', Times, serif;
+    position: relative;
+    font-size: 20px;
+    margin-top: 40%;
+    margin-left: 15px;
+    color: rgb(236, 227, 227);
+    -webkit-text-stroke: 0.1vw rgb(236, 223, 223);
+    text-transform: uppercase;
+   
+}
+h1::before{
+    content: attr(data-text);
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    color: #040d5e; 
+    -webkit-text-stroke: 0vw rgb(233, 221, 221) ;  
+    border-right: 1px solid #040d5e; 
+    overflow: hidden;
+    white-space: nowrap;
+    animation: animate 7s linear infinite;
+}
+@keyframes animate{
+    0%,10%,100%{
+        width: 0;
+    }
+    
+    70%,90%{
+        width: 100%;
+    }
+}
+
+
+h2{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    margin-left: 120px;
+    font-style: oblique;
+    letter-spacing: 4px;
+    line-height: 50px;
+    position: absolute;
+    
+
+}
+h2{
+    background:linear-gradient(to right,darkblue,rgb(134, 228, 228),darkblue);
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 1px rgba(0, 0, 139, 0.185);
+    color: transparent;
+    animation:  fadein 5s normal;
+}
+
+
+@keyframes fadein{
+    0%{ opacity:0;}
+    100%{opacity: 1;}
+}
+.heartcloud img{
+    width: 50px;
+    margin-right: 4%;
+    animation: heartcloud 7s linear infinite, beat 1s infinite;
+    
+
+}
+.heartcloud{
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content:left;
+    position: absolute;
+    bottom: 0;
+    left: 1px;
+}
+@keyframes heartcloud{
+    0%{
+        transform: translateY(0);
+        opacity: 0;
+        
+    }
+    50%{
+        
+        opacity: 1;
+    }
+    70%{
+       
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(-50vh);
+        opacity: 0;
+    }
+}
+
+
+.heartcloud img:nth-child(1){
+    animation-delay: 4s;
+}
+.heartcloud img:nth-child(2){
+    animation-delay: 5s;
+}
+.heartcloud img:nth-child(3){
+    animation-delay: 1s;
+}
+.heartcloud img:nth-child(4){
+    animation-delay: 2.5;
+}
+.heartcloud img:nth-child(5){
+    animation-delay: 6s;
+}
+.heartcloud img:nth-child(6){
+    animation-delay: 3.5s;
+}
+.heartcloud:nth-child(7){
+    animation-delay: 4.5s;
+}
+.heartcloud:nth-child(8){
+    animation-delay: 2s;
+}
+
+
+
+
+
+
+ 
+

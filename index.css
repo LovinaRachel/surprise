@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css?family=Tangerine");
+@import url("https://fonts.googleapis.com/css?family=Sofia");
+@import url("https://fonts.googleapis.com/css?family=Cinzel|Fauna+One");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+  
+    text-align: center;
+}
+.container{
+    width:150%;
+    height:140vh;
+    position: absolute;
+    background-image:radial-gradient(pink,rgb(236, 75, 137)) ;
+    
+   
+}
+
+.surprise{
+    font-family: Poppins, sans-serif;
+    background-color:rgb(252, 157, 173);
+    width: 60%;
+    
+    box-shadow: 0 0 10px 0 rgba(80, 7, 64, 0.63), 0 10px 25px 0 rgba(151, 5, 132, 0.527);;
+    padding-left: 30px ;
+    padding-right: 30px;
+    margin-left:25%;
+    margin-top: 50%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+ 
+    height:30%;
+    border-radius: 40px;
+}
+ h1{
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60px;
+    padding-top: 20px;
+    font-family: 'Fauna One', serif ;
+    color: rgba(233, 67, 100, 0.699);
+}
+
+ h3{
+    font-weight: 550;
+    line-height: 30px;
+    font-style: oblique;
+    font-family: 'Tangerine', serif;
+    font-size: 25px;
+    color: rgba(22, 6, 20, 0.788);
+    
+}
+nav a{
+    
+    text-decoration: none;
+    position: relative;
+    font-style: italic;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, 'Times New Roman', Times, serif;
+    color: #fdf9fb;
+    text-decoration: dotted;
+    padding: 7px 11px;
+    margin-right: 5px;
+    border: 2px solid #f0e0e8;
+    background: rgb(224, 94, 224);
+    opacity: 80%;
+    line-height: 50px;
+}
+
+
+span{
+    line-height: 5px;
+    color: #0c0207;
+    
+}
+.left-border{
+    background: url(images/heartwhite.png);
+    position:absolute;
+    background-size: cover;
+    left:-40px;
+    top:-230px;
+    width:80%;
+    height:900px;
+
+}
+.bottom-border{
+    background: url(images/cloud.png);
+    position:absolute;
+    background-size:cover;
+    right:50px;
+    bottom:50px;
+    width:800px;
+    height:500px;
+}
+.heartballon img{
+    width: 50px;
+    margin-left: 6.5%;
+    animation: heartballon 7s linear infinite;
+}
+.heartballon{
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content:right;
+    position: absolute;
+    bottom: 0px;
+    right: 1px;
+    
+}
+@keyframes heartballon{
+    0%{
+        transform: translateY(0);
+        opacity: 0;
+    }
+    50%{
+        
+        opacity: 1;
+    }
+    70%{
+       
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(-80vh);
+        opacity: 0;
+    }
+    
+}
+.heartballon img:nth-child(1){
+    animation-delay: 4s;
+}
+.heartballon img:nth-child(2){
+    animation-delay: 3s;
+}
+.heartballon img:nth-child(3){
+    animation-delay: 4.5s;
+}
+.heartballon img:nth-child(4){
+    animation-delay: 5s;
+}
+.heartballon img:nth-child(5){
+    animation-delay: 6s;
+}
+.heartballon img:nth-child(6){
+    animation-delay: 3.5s;
+}
+.heartballon img:nth-child(7){
+    animation-delay: 6.5s;
+}
